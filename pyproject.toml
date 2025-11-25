@@ -1,0 +1,26 @@
+[project]
+name = "statistics-homework"
+version = "0.1.0"
+description = "統計学の期末課題として、競艇の情報をスクレイピングしたのちにcsv化し 、pandasで統計的分析を行う。"
+authors = [
+    {name = "Ryohei-Con",email = "ryohei9420@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "numpy (>=2.3.5,<3.0.0)",
+    "requests (>=2.32.5,<3.0.0)",
+    "beautifulsoup4 (>=4.14.2,<5.0.0)",
+    "pandas (>=2.3.3,<3.0.0)",
+    "seaborn (>=0.13.2,<0.14.0)",
+    "ipykernel (>=7.1.0,<8.0.0)",
+    "matplotlib (>=3.10.7,<4.0.0)",
+    "matplotlib-fontja (>=1.1.0,<2.0.0)"
+]
+
+[tool.poetry]
+package-mode = false
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
