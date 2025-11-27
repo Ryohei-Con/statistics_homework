@@ -13,6 +13,7 @@ BASE_URLS = [
 ]
 HEADERS = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"}
 html_root_path = Path("scraping/downloaded_html")
+html_root_path.mkdir(exist_ok=True)
 
 
 def get_tournament_urls(url: str):
